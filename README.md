@@ -55,33 +55,35 @@ By default the maximum number of lines that will be audited within each file wil
 <br>  `-v, --verbose`         Display verbose messages (Warning: output can be huge).
 
 ## Example Output
-`[root@sc ~]# ./cardscan4linux.py -e txt -d 8`
-<br>`===================================`
-<br>`[ Root Path ]______________/`
-<br>`[ Max Size ]_______________100k`
-<br>`[ Min Size ]_______________16c`
-<br>`[ Extensions ]_____________['txt']`
-<br>`[ Lines per file ]_________50`
-<br>`[ Depth of search ]________8`
-<br>`[ Scan Mounted Dirs ]______False`
-<br>`[ Exclusions ]_____________/var`
-<br>`===================================`
+```
+[root@sc ~]# ./cardscan4linux.py -e txt -d 8
+===================================
+[ Root Path ]______________/
+[ Max Size ]_______________100k
+[ Min Size ]_______________16c
+[ Extensions ]_____________['txt']
+[ Lines per file ]_________50
+[ Depth of search ]________8
+[ Scan Mounted Dirs ]______False
+[ Exclusions ]_____________/var
+===================================
 
-<br>`[*] Starting file-system scan. This may take a while...`
-<br>`[*] File-system search complete. 24855 files to check for card-data.`
-<br>`File: /home/carddetails.txt`
-<br>`	AMEX:		 371449635398431`
-<br>`	AMEX:		 371427352388125`
-<br>`File: /root/test.txt`
-<br>`	AMEX:		 378282246310005`
-<br>`	AMEX:		 371449635398431`
-<br>`	AMEX:		 378734493671000`
-<br>`	MASTERCARD:	 5105105105105100`
-<br>`	VISA:		 4111111111111111`
-<br>`	VISA:		 4012888888881881`
-<br>`	MASTERCARD:	 5522131028402823`
+[*] Starting file-system scan. This may take a while...
+[*] File-system search complete. 24855 files to check for card-data.
+File: /home/carddetails.txt
+ AMEX:    371449635398431
+ AMEX:    371427352388125
+File: /root/test.txt
+ AMEX:    378282246310005
+ AMEX:    371449635398431
+ AMEX:    378734493671000
+ MASTERCARD:  5105105105105100
+ VISA:    4111111111111111
+ VISA:    4012888888881881
+ MASTERCARD:  5522131028402823
 
-`[*] Card scanning complete. 24855 total files were scanned in 8 seconds.`
+[*] Card scanning complete. 24855 total files were scanned in 8 seconds.
+```
 
 # To do
 
